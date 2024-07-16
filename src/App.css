@@ -1,0 +1,61 @@
+@font-face {
+  font-family: font-1;
+  src: url(./assets/fonts/Sansation_Bold.ttf);
+}
+@font-face {
+  font-family: font-2;
+  src: url(./assets/fonts/HeadingNowTrial-65Medium.ttf);
+}
+@font-face {
+  font-family: font-3;
+  src: url(./assets/fonts/Quantify.ttf);
+}
+.text{
+  font-family: font-1;
+}
+.bold{
+  font-family: font-2;
+}
+.quantify{
+  font-family: font-3;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.card:hover video{
+  opacity: 1;
+  transition:  all ease 0.5s;
+}
+.card video{
+  transition:  all ease 0.5s;
+}
+.stroke{
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+.right{
+  animation: rightAnimation 30s linear infinite;
+}
+@keyframes rightAnimation {
+  from{
+    transform: translateX(0%);
+    rotate: -5deg;
+  }
+  to{
+    transform: translateX(100%);
+    rotate: -5deg;
+  }
+}
+.left{
+  animation: leftAnimation 30s linear infinite;
+}
+@keyframes leftAnimation {
+  from{
+    transform: translateX(0%);
+    rotate: -5deg;
+  }
+  to{
+    transform: translateX(-100%);
+    rotate: -5deg;
+  }
+}
