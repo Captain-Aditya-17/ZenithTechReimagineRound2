@@ -42,15 +42,15 @@ const App = () => {
       <div
         onMouseMove={(dets) => cursorAnimation(dets)}
         className='bg-black'>
-        <div className='cursor w-[3vw] h-[3vw] mix-blend-difference bg-white fixed z-[999]'></div>
+        <div className='cursor w-[2vw] h-[2vw] mix-blend-difference rounded-full bg-white fixed z-[999]'></div>
         <div onMouseEnter={none} onMouseLeave={reapt}>
           <Navbar />
         </div>
         <Home />
         <Page2 />
+        <Page4 />
         <Shop />
         <Page3 />
-        <Page4 />
         <Page5 />
         <Page6 />
         <Page7 />

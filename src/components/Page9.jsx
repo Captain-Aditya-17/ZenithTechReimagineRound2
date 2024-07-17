@@ -45,7 +45,7 @@ const Page9 = () => {
         }
     )
     return (
-        <div className='cont9 w-full md:h-screen overflow-hidden bg-black p-4 relative'>
+        <div className='hidden md:block cont9 w-full md:h-screen overflow-hidden bg-black p-4 relative'>
             <div className='w-full h-[90%] flex flex-col md:flex-row gap-4 p-2'>
                 {
                     ['https://i.pinimg.com/474x/c4/b0/4d/c4b04d09f40de2622b7552037e06667e.jpg','https://i.pinimg.com/236x/41/7d/c9/417dc96c38a9d19e381d7b7c336b2119.jpg','https://i.pinimg.com/236x/6a/e8/3e/6ae83e04f10d228f4f90d19b80a3d6d9.jpg','https://i.pinimg.com/474x/25/8a/99/258a99434f9e8e17d54b0927b9d98878.jpg'].map((item,index)=>{

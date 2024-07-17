@@ -79,3 +79,7 @@ body::-webkit-scrollbar{
   position: relative;
   z-index: 10;
 }
+.bg-img{
+  background: linear-gradient(to left,black,black,transparent), url(./assets/page4.jpg);
+  background-size: cover;
+}

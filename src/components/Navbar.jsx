@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useEffect, useRef, useState } from 'react'
 gsap.registerPlugin(useGSAP);
-
+import '../App.css'
 const Navbar = () => {
   const menuFull = useRef()
   const [menu, setmenu] = useState(false)
@@ -28,7 +28,12 @@ const Navbar = () => {
 
   return (
     <>
-      <div ref={menuFull} className='w-full h-screen menu-screen transition-all duration-300 bg-white fixed z-[98] -top-[100%]'>
+      <div ref={menuFull} className='w-full h-screen menu-screen transition-all duration-300 bg-white fixed z-[98] -top-[100%] flex justify-center flex-col gap-y-3 p-5'>
+        {
+          ['models','vehicles','services','experinces'].map((index,item)=>{
+            return <h1 className='text-5xl md:text-7xl cursor-pointer capitalize quantify'>{index}</h1>
+          })
+        }
       </div>
       <div className='fixed bg-white z-[99] top-[2%] left-1/2 -translate-x-1/2 text-white flex items-center rounded-full justify-between p-5 w-[90%] md:w-1/2 h-[8vh] '>
         <img className='w-[10%]' src="https://logos-world.net/wp-content/uploads/2021/06/Porsche-Logo.png" alt="" />

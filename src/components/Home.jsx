@@ -47,7 +47,7 @@ const Home = () => {
               <h1 className='bold text-4xl md:text-3xl'>Porsche</h1>
               <p className='text-xl text-zinc-400'>Keep your essence.</p>
               </div>
-              <div className='w-full h-full md:h-[20vw] bg-red-500 rounded-xl overflow-hidden'>
+              <div className='w-full h-full md:h-[20vw] rounded-xl overflow-hidden'>
                 <img className='w-full h-full object-cover' src="https://i.pinimg.com/564x/89/e3/9f/89e39f7142f79ffd51212336c212d632.jpg" alt="" />
               </div>
             </div>

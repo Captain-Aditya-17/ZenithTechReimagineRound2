@@ -23,7 +23,7 @@ const Page3 = () => {
   return (
      <div className='w-full h-screen p-2 bg-black cont flex mb-4 flex-col items-center gap-y-4 text-white'>
       <h1 className='text-center text-3xl capitalize text'>featured News</h1>
-      <div className='w-full md:w-1/2 h-[80%] md:h-full  flex flex-col gap-y-3'>
+      <div className='w-full md:w-[60%] h-[80%] md:h-full  flex flex-col gap-y-3'>
         <div className='w-full h-full flex gap-3 overflow-hidden'>
           <div className='w-full h-full box rounded-xl bg-white'></div>
           <div className='w-full h-full rounded-xl flex flex-col gap-y-3'>
