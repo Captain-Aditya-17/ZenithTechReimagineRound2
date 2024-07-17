@@ -29,7 +29,7 @@ const Shop = () => {
                     name: 'car',
                     video: 'https://media.istockphoto.com/id/1302074275/video/driving-sports-car-on-a-race-track-at-sunset.mp4?s=mp4-640x640-is&k=20&c=JXp2d2AKW4PKj7MrBWWTTI5We5Fi_ej2JazwgLIKtsw='
                 },].map((item,index)=>{
-                    return <div className='w-[42vw] md:w-[20vw]'>
+                    return <div key={index} className='w-[42vw] md:w-[20vw]'>
                     <div onMouseEnter={()=> videoHandler(index)} onMouseLeave={()=> stopHandler(index)} className='w-full relative cursor-pointer  transition-all rounded-md overflow-hidden h-[50vw] md:h-[20vw] card'>
                         <img className='w-full h-full object-cover' src={item.img} alt="" />
                         <video ref={el => videoRef.current[index] = el} className='absolute top-0 left-0 opacity-0 z-10 w-full h-full object-cover' src={item.video} muted></video>

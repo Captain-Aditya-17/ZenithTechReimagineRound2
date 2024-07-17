@@ -9,7 +9,7 @@ const Page10 = () => {
       <div className='w-full h-[50%] flex items-center justify-center gap-5'> 
         {
           ['https://i.pinimg.com/564x/f0/2d/29/f02d2999fe0c4d1a82179f9cb40c94d1.jpg','https://i.pinimg.com/564x/44/ec/d1/44ecd14cb871f56b514a9559e727c28d.jpg'].map((item,index)=>{
-            return <div className='w-full h-full rounded-xl overflow-hidden bg-red-500'>
+            return <div key={index} className='w-full h-full rounded-xl overflow-hidden bg-red-500'>
               <img className='w-full h-full object-cover' src={item} alt="" />
             </div>
           })

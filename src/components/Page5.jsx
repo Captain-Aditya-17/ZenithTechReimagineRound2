@@ -86,7 +86,7 @@ const Page5 = () => {
                 <div className='md:w-full flex relative items-center justify-center slide-3 md:h-full md:flex-shrink-0'>
                     <img className='up-img absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 scale-[4]' src="https://i.pinimg.com/236x/25/03/23/250323269c906b90ec3f4404e1cc28e4.jpg" alt="" />
                     <h1 className='absolute z-[9] whitespace-nowrap bold top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] font-bold uppercase'>HUman in space</h1>
-                    <img className='img-3 z-[10]  scale-[.8] right-0 top-[10%]  -translate-y-1/2 absolute' src="https://i.pinimg.com/474x/70/29/fb/7029fba862cc2c5dc64fbaf2f321556b.jpg" alt="" />
+                    <img className='img-3 z-[10]  scale-[.8] right-0 top-[20%]  -translate-y-1/2 absolute' src="https://i.pinimg.com/474x/70/29/fb/7029fba862cc2c5dc64fbaf2f321556b.jpg" alt="" />
                 </div>
                 <div className='md:w-full md:h-full relative md:flex-shrink-0'>
                     <img onMouseMove={(dets)=> crsrAnimation(dets)} className='absolute left-[12%] scale-[1.5]' src="https://i.pinimg.com/736x/ea/01/5a/ea015a2ef411979d94656a9f0d39c3e5.jpg" alt="" />
