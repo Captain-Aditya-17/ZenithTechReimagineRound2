@@ -64,7 +64,7 @@ const Page7 = () => {
         })
       }
       <div className='hidden md:block md:absolute md:w-full md:h-full md:px-5'>
-        <img className='img absolute scale-[0.4] left-0' src={img1} alt="" />
+        <img className='img absolute scale-[0.4] top-0 left-0' src={img1} alt="" />
         <img className='img absolute top-[20%] z-[11] left-1/3 scale-[.6]' src={img3} alt="" />
         <img className='img absolute top-[60%] left-[50%] z-[11] -translate-x-1/2 -translate-y-1/2 scale-[.6]' src={img7} alt="" />
         <img className='img absolute bottom-[30%] left-0 scale-[.6]' src={img4} alt="" />
