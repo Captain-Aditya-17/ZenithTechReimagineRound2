@@ -1,6 +1,5 @@
 import React from 'react'
 import Home from './components/Home'
-import Page2 from './components/Page2'
 import Navbar from './components/Navbar'
 import Page3 from './components/Page3'
 import Page4 from './components/Page4'
@@ -15,6 +14,7 @@ import gsap from 'gsap'
 import Shop from './components/Shop'
 import Page11 from './components/Page11'
 import Footer from './components/Footer'
+import Page2 from './components/Page2'
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -42,14 +42,16 @@ const App = () => {
       <div
         onMouseMove={(dets) => cursorAnimation(dets)}
         className='bg-black'>
-        <div className='cursor w-[2vw] h-[2vw] mix-blend-difference rounded-full bg-white fixed z-[999]'></div>
+        <div className='hidden md:block cursor w-[2vw] h-[2vw] mix-blend-difference rounded-full bg-white fixed z-[999]'></div>
         <div onMouseEnter={none} onMouseLeave={reapt}>
           <Navbar />
         </div>
         <Home />
-        <Page2 />
+        <Page2/>
         <Page4 />
+        <div onMouseEnter={none} onMouseLeave={reapt}>
         <Shop />
+        </div>
         <Page3 />
         <Page5 />
         <Page6 />

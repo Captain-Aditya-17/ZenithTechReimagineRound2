@@ -3,11 +3,12 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React from 'react'
 gsap.registerPlugin(ScrollTrigger)
+import page6 from '../assets/page6.jpg'
 const Page6 = () => {
   useGSAP(
-    ()=>{
-      gsap.from('.img-con',{
-        scrollTrigger:{
+    () => {
+      gsap.from('.img-con', {
+        scrollTrigger: {
           trigger: '.page-6',
           start: '-50% top',
           end: 'top top',
@@ -22,12 +23,12 @@ const Page6 = () => {
     <div className='page-6 w-full h-screen p-3 flex flex-col gap-4 justify-between bg-white'>
       <div className='w-full flex-col gap-5 h-full flex items-center justify-center md:h-[50%]'>
         <h1 className='text-4xl mt-5 text-black text'>
-          Lunar Space Station
+          Porsche 911
         </h1>
-        <p className='bold text-center md:w-[50%]'>On this episode of "Houston, We Have a Podcast," NASA astronaut Randy Bresnik and Gateway’s integration and utilization manager, Stephanie Dudley, discuss how the future lunar space station br will be used for deep space exploration.</p>
+        <p className='text text-center text-xl md:w-[50%]'>The legendary 911. The identity of the Porsche brand - since 1963. Here you will find an overview of all Porsche 911 model variants.</p>
       </div>
       <div className='img-con w-full h-[60%] overflow-hidden rounded-xl md:h-full'>
-        <img className='w-full h-full object-cover' src="https://www.nasa.gov/wp-content/uploads/2024/07/halo-tas-for-nasa-03-2.jpg?resize=2000,1334" alt="" />
+        <img className='w-full h-full object-cover' src={page6} alt="" />
       </div>
     </div>
   )

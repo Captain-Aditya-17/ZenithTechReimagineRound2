@@ -1,28 +1,24 @@
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React from 'react'
-gsap.registerPlugin(ScrollTrigger)
+import left2 from '../assets/left2.jpg'
+import right2 from '../assets/right2.avif'
 import '../App.css'
+
 const Page2 = () => {
-  useGSAP(
-    ()=>{
-      gsap.from('.para-img',{
-        scrollTrigger:{
-          trigger: '.page-2',
-          start: '-50% top',
-          end: 'top top',
-        },
-        width: 0,
-        ease: 'power4'
-      })
-    }
-  )
   return (
-    <div className='page-2 w-full h-screen p-3 bg-black'>
-        <div className='w-full onfull h-full rounded-[10px] overflow-hidden bg-white text-black flex items-center justify-center'>
-          <h1 className='text-xl md:text-4xl quantify text-center flex flex-col items-center'><div className='md:flex items-center'>Porsche is a German automobile manufacturerthat specializes <div className='para-img hidden md:block w-[10vw] m-2 rounded-full h-[3.8vw] overflow-hidden'>
-            <img className='w-full h-full object-cover' src="https://wallpapers.com/images/hd/black-porsche-911-4k-laptop-car-8cpkovld9xh0ua8z.jpg" alt="" /></div> in high-performance</div>  luxury sports cars, SUVs, and sedans.The brand is known for its timeless designs, performance, safety features, and entertainment technology</h1>
+    <div className='w-full h-screen p-3 bg-black flex'>
+        <div className='w-full md:w-[60%] h-full p-3  '>
+            <div className='w-[90%] h-full rounded-xl overflow-hidden'>
+           <img className='w-full h-full object-cover' src={left2} alt="" />
+            </div>
+        </div>
+        <div className='hidden w-full h-full md:flex flex-col justify-between items-center  p-3'>
+            <div className='w-[100%] h-1/2 rounded-xl overflow-hidden'>
+           <img className='w-full h-full object-cover' src={right2} alt="" />
+            </div>
+            <div className='w-full text-white flex justify-between items-end h-[40%]'>
+                <button className='text-xl uppercase bg-none text-white transition-all font-bold px-8 py-4 border-2 hover:bg-white hover:text-black'>Explore NOw</button>
+                <h1 className='text-white text-[6vw] quantify uppercase text-right'>Enjoy porsche <br /> now</h1>
+            </div>
         </div>
     </div>
   )

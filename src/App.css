@@ -32,6 +32,9 @@ body::-webkit-scrollbar{
 .card video{
   transition:  all ease 0.5s;
 }
+span{
+  color: rgb(255, 217, 0);
+}
 .stroke{
   -webkit-text-stroke: 2px white;
   color: transparent;
@@ -82,4 +85,10 @@ body::-webkit-scrollbar{
 .bg-img{
   background: linear-gradient(to left,black,black,transparent), url(./assets/page4.jpg);
   background-size: cover;
+}
+.box{
+  transition: all ease 0.3s;
+}
+.box:hover{
+  opacity: .6;
 }

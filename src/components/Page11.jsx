@@ -3,7 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React from 'react'
 import '../App.css'
-
+import page11 from '../assets/page11.jpg'
 const Page11 = () => {
     useGSAP(
         () => {
@@ -48,7 +48,7 @@ const Page11 = () => {
                 </div>
             </div>
             <div className='w-full h-full absolute flex items-center justify-center'>
-            <img className='img-11' src="https://wallpapercave.com/wp/wp12950411.jpg" alt="" />
+            <img className='img-11 scale-[3] md:scale-[1]' src={page11} alt="" />
             </div>
         </div>
     )
