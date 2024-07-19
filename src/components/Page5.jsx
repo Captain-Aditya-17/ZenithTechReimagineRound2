@@ -93,9 +93,9 @@ const Page5 = () => {
                 <div className='md:w-full flex relative items-center justify-center slide-3 md:h-full md:flex-shrink-0'>
                     <img className='up-img absolute left-0 top-0  scale-[1]' src={slide3} alt="" />
                     <h1 className='absolute z-[9] whitespace-nowrap bold top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] font-bold uppercase'>Feels proffesional</h1>
-                    <img className='img-3 z-[10]  scale-[.6] right-0 top-[20%]  -translate-y-1/2 absolute' src={slide3_2} alt="" />
+                    <img className='img-3 z-[10]  scale-[.6] right-0 top-[10%]  -translate-y-1/2 absolute' src={slide3_2} alt="" />
                 </div>
-                <div onMouseMove={(dets)=> crsrAnimation(dets)} onMouseLeave={()=> crsrleave()} className='md:w-full md:h-full relative md:flex-shrink-0'>
+                <div onMouseMove={(dets)=> crsrAnimation(dets)} onMouseLeave={(dets)=> crsrleave(dets)} className='md:w-full md:h-full relative md:flex-shrink-0'>
                     <img className='absolute top-[-25%] left-[-20%] scale-[.6]' src={slide4} alt="" />
                     <h1 className='absolute z-[9] whitespace-nowrap bold bottom-0 right-[-10%] -translate-x-1/2 text-[8vw] font-bold uppercase'>explore</h1>
                     <img ref={crsrRef}  className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[.3]' src={slide4_2} alt="" />

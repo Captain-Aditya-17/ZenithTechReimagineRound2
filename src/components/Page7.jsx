@@ -60,7 +60,7 @@ const Page7 = () => {
     <div className='page-7 relative w-full h-screen md:h-[200vh] flex items-center pt-[10vw] flex-col bg-yellow-500'>
       {
         ['e-performance', 'compare model', 'locate a dealer', 'porsche Lifestyle', 'Porsche Social', 'Discover', 'Latest News','contact us',].map((item, index) => {
-          return <h1 key={index} className={`text-[2vw] mt-[2vw] mb-[3vw] md:text-9xl text cursor-pointer md:m-0 text7 z-[10]  uppercase`}>{item}</h1>
+          return <h1 key={index} className={`text-[5vw] mt-[2vw] mb-[3vw] md:text-9xl text cursor-pointer md:m-0 text7 z-[10]  uppercase`}>{item}</h1>
         })
       }
       <div className='hidden md:block md:absolute md:w-full md:h-full md:px-5'>
