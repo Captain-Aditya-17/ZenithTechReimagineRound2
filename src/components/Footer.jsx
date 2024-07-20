@@ -26,7 +26,7 @@ const Footer = () => {
     },
     {
       icon: <FaInstagram />,
-      bgcolor: 'linear-gradient(200deg, #B11099,#FE9C2D)',z\
+      bgcolor: 'linear-gradient(200deg, #B11099,#FE9C2D)',
       id: 3
     },
     {
