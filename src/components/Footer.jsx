@@ -7,8 +7,40 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   const iconRef = useRef([])
-  const colorChanger = (index) => {
-    iconRef.current[index].style.backgroundColor = 'red'
+ 
+  const iconSocial = [
+    {
+      icon: <FaFacebook />,
+      bgcolor: '#1DAAFA',
+      id: 0
+    },
+    {
+      icon: <FaYoutube />,
+      bgcolor: '#FF0808',
+      id: 1
+    },
+    {
+      icon: <FaPinterest />,
+      bgcolor: '#BF1023',
+      id: 2
+    },
+    {
+      icon: <FaInstagram />,
+      bgcolor: 'linear-gradient(200deg, #B11099,#FE9C2D)',z\
+      id: 3
+    },
+    {
+      icon:<FaLinkedin />,
+      bgcolor: '#0A78B5',
+      id: 4
+    },
+  ]
+  const colorChanger = (item) => {
+    iconRef.current[item.id].style.background = item.bgcolor
+    console.log(item.bgcolor)
+  }
+  const colorLeave = (index) => {
+    iconRef.current[index].style.background = 'none'
   }
   return (
     <div className='w-full h-screen relative flex items-center gap-y-3 flex-col justify-center bg-white text-black'>
@@ -20,8 +52,8 @@ const Footer = () => {
       }
       <div className='flex gap-3'>
         {
-          [<FaFacebook />, <FaYoutube />, <FaPinterest />, <FaInstagram />, <FaLinkedin />].map((item, index) => {
-            return <i onMouseEnter={() => colorChanger(index)} ref={el => iconRef.current[index] = el} key={index} className='text-4xl transition-all md:p-3 rounded-full duration-[.3s] cursor-pointer'>{item}</i>
+          iconSocial.map((item, index) => {
+            return <i onMouseEnter={() => colorChanger(item)} onMouseLeave={() => colorLeave(index)} ref={el => iconRef.current[index] = el} key={index} className='text-4xl transition-all md:p-3 rounded-full duration-[.3s] cursor-pointer hover:text-white'>{item.icon}</i>
           })
         }
 

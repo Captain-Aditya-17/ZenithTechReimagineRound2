@@ -60,7 +60,9 @@ const App = () => {
         <Page9 />
         <Page10 />
         <Page11/>
+        <div onMouseEnter={none} onMouseLeave={reapt}>
         <Footer/>
+        </div>
       </div>
     </>
   )
