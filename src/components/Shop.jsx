@@ -8,10 +8,13 @@ import panamara from '../assets/panamara.jpg'
 import macan from '../assets/macan.jpg'
 import cayenne from '../assets/black.jpg'
 import poster from '../assets/poster.webp'
+import ShopText from '../assets/introText.png'
+
 
 const Shop = () => {
     const imgRef = useRef([])
     const screenPara = useRef()
+    const screenName = useRef()
     const screenRef = useRef()
 
     const items = [{
@@ -74,7 +77,7 @@ const Shop = () => {
     const imgChanger = (item) => {
         const screenImg = screenRef.current;
         const newPara = screenPara.current;
-        
+        const newName = screenName.current
         gsap.to(screenImg, {
             opacity: 0, y: 20, duration: 0.3, onComplete: () => {
                 screenImg.src = item.img;
@@ -87,16 +90,22 @@ const Shop = () => {
                 gsap.to(newPara, { opacity: 1, duration: 0.3, y: 0 });
             }
         });
+        gsap.to(newName, {
+            opacity: 0, y: -20, duration: 0.3, onComplete: () => {
+                newName.innerHTML = item.name;
+                gsap.to(newName, { opacity: 1, duration: 0.3, y: 0 });
+            }
+        });
     }
 
     return (
         <div className='w-full flex gap-5'>
-            <div className='w-full flex-wrap p-4 bg-black justify-center flex gap-5 text-white'>
+            <div className='w-full md:w-[60%] flex-wrap md:flex-col p-3 justify-center items-center flex gap-5 text-white'>
                 {
                     items.map((item, index) => {
                         return (
-                            <div key={index} className='w-[40vw] md:w-[20vw]'>
-                                <div onClick={() => imgChanger(item)} className='w-full relative cursor-pointer transition-all rounded-md overflow-hidden h-[50vw] md:h-[20vw] card'>
+                            <div key={index} className='w-full md:w-full'>
+                                <div onClick={() => imgChanger(item)} className='w-full relative cursor-pointer transition-all rounded-md overflow-hidden h-[50vw] md:h-[40vw] card'>
                                     <img ref={el => imgRef.current[index] = el} className='w-full h-full object-cover' src={item.img} alt="" />
                                 </div>
                                 <h1 className='text text-xl capitalize'>{item.name}</h1>
@@ -106,14 +115,18 @@ const Shop = () => {
                 }
             </div>
             <div className='w-full h-screen overflow-hidden items-center justify-center gap-y-3 flex-col sticky top-0 bg-white hidden md:flex'>
-                <div className='h-1/3 bottom-0 z-[9] w-[95%] rounded-tl-2xl rounded-tr-2xl bg-black absolute'></div>
-                <div className='w-[80%] relative z-10 '>
-                    <p ref={screenPara} className=' uppercase text-xl text text-center'>Porsche Beauties</p>
-                </div>
-                <div className='w-[20vw] h-[20vw] overflow-hidden z-10 rounded-md'>
+                <img className='w-[25%] absolute left-[5%] top-[12%] ' src={ShopText} alt="" />
+                <div className='h-[35%] bottom-0 z-[9] w-[95%] rounded-tl-2xl rounded-tr-2xl bg-black absolute'></div>
+                <div className='flex items-center justify-around gap-5' >
+                <div className='w-[25vw] h-[20vw] overflow-hidden z-10 rounded-md '>
                     <img ref={screenRef} className='w-full h-full object-cover' src={poster} alt="" />
                 </div>
-                <div className='z-10 '>
+                <div className='w-[40%] relative z-10 flex flex-col gap-y-3'>
+                    <h1 ref={screenName} className='text-4xl uppercase text '>Car NAme</h1>
+                    <p ref={screenPara} className=' uppercase text-xl text text-left'>Porsche Beauties</p>
+                </div>
+                </div>
+                <div className='z-10 w-full flex items-start px-[3vw]'>
                     <button className='bg-white relative w-[15vw] text-xl text py-3 rounded-md'>Explore Now</button>
                 </div>
             </div>

@@ -62,7 +62,7 @@ const Navbar = () => {
           })
         }
       </div>
-      <div className='fixed backdrop-blur-[5px] z-[99] top-0 left-1/2 -translate-x-1/2 text-white  flex items-center justify-between w-[90%] md:w-full h-[12vh] '>
+      <div className='fixed z-[99] top-0 left-1/2 -translate-x-1/2 text-white  flex items-center justify-between w-[90%] md:w-full h-[12vh] '>
         <img className='w-[15%] md:w-[7%]' src={logo} alt="" />
         <div onClick={toggole} className='mr-5 text-xl flex bg-zinc-900 md:bg-transparent rounded-full px-4 py-2 md:p-2 flex-col items-end gap-2 cursor-pointer '>
           <div className={`w-[8vw]  mix-blend-difference transition-all bg-white rounded-xl h-[3px] md:h-[4px] md:rounded-xl md:w-[2.5vw]`}></div>
