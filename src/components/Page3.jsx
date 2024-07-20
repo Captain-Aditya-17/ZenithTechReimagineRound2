@@ -11,22 +11,7 @@ import new3 from '../assets/new3.webp'
 import new4 from '../assets/new4.jpg'
 import new5 from '../assets/new5.mp4'
 const Page3 = () => {
-  useGSAP(
-    ()=>{
-      gsap.from('.box',{
-        scrollTrigger:{
-          trigger: '.cont',
-          start: '-50% top',
-          end: 'top top',
-          scrub: 1
-        },
-        y:500,
-        stagger: .3,
-        ease: "circ.out",
-      })
-      gsap.set('.box',{cursor: 'pointer'})
-    }
-  )
+  
   return (
      <div className='w-full h-screen p-2 bg-black cont flex mb-4 flex-col items-center gap-y-4 text-white'>
       <h1 className='text-center text-3xl capitalize text'>Porsche Social</h1>

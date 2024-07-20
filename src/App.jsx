@@ -22,6 +22,7 @@ const App = () => {
     gsap.to('.cursor', {
       x: dets.clientX,
       y: dets.clientY,
+      scale: 1
     })
   }
   const none = (dets) => {
@@ -42,7 +43,7 @@ const App = () => {
       <div
         onMouseMove={(dets) => cursorAnimation(dets)}
         className='bg-black'>
-        <div className='hidden md:block cursor w-[2vw] h-[2vw] mix-blend-difference rounded-full bg-white fixed z-[999]'></div>
+        <div className='hidden md:block scale-0  cursor w-[2vw] h-[2vw] mix-blend-difference rounded-full bg-white fixed z-[999]'></div>
         <div onMouseEnter={none} onMouseLeave={reapt}>
           <Navbar />
         </div>

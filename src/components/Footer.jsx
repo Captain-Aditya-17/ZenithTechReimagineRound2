@@ -53,13 +53,13 @@ const Footer = () => {
       <div className='flex gap-3'>
         {
           iconSocial.map((item, index) => {
-            return <i onMouseEnter={() => colorChanger(item)} onMouseLeave={() => colorLeave(index)} ref={el => iconRef.current[index] = el} key={index} className='text-4xl transition-all md:p-3 rounded-full duration-[.3s] cursor-pointer hover:text-white'>{item.icon}</i>
+            return <i onMouseEnter={() => colorChanger(item)} onMouseLeave={() => colorLeave(index)} ref={el => iconRef.current[index] = el} key={index} className='text-4xl transition-all p-3 rounded-full duration-[.3s] cursor-pointer hover:text-white'>{item.icon}</i>
           })
         }
 
       </div>
-      <div className='absolute flex items-center justify-center w-full h-[20vw] md:h-[5vw] bg-black bottom-0 text-white'>
-        <h1 className='text text-[1vw] text-center'>© 2024 Porsche India - SKODA AUTO Volkswagen India Private Limited - India. Legal notice. Privacy Policy. </h1>
+      <div className='absolute flex p-3 items-center justify-center w-full h-[20vw] md:h-[5vw] bg-black bottom-0 text-white'>
+        <h1 className='text text-[2.6vw] md:text-[1vw] text-center'>© 2024 Porsche India - SKODA AUTO Volkswagen India Private Limited - India. Legal notice. Privacy Policy. </h1>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
-import part1 from '../assets/part1.jpg'
-import part2 from '../assets/part2.jpg'
+import part1 from '../assets/iris1.jpeg'
+import part2 from '../assets/iris2.png'
 const Page10 = () => {
   return (
     <div className='w-full h-screen md:h-[140vh] text-white flex gap-5 p-5 items-center flex-col justify-center md:justify-start'>

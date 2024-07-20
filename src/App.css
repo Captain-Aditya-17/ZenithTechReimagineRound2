@@ -10,6 +10,10 @@
   font-family: font-3;
   src: url(./assets/fonts/Quantify.ttf);
 }
+@font-face {
+  font-family: font-4;
+  src: url(./assets/fonts/good-times-rg.otf);
+}
 .text{
   font-family: font-1;
 }
@@ -18,6 +22,9 @@
 }
 .quantify{
   font-family: font-3;
+}
+.good-times{
+  font-family: font-4;
 }
 body{
   overflow-x: hidden;
@@ -33,7 +40,7 @@ body::-webkit-scrollbar{
   transition:  all ease 0.5s;
 }
 span{
-  color: rgb(255, 217, 0);
+  color: rgb(255, 187, 0);
 }
 .stroke{
   -webkit-text-stroke: 2px white;
@@ -91,4 +98,11 @@ span{
 }
 .box:hover{
   opacity: .6;
+}
+.list img{
+  transition: all ease 0.3s;
+}
+.list:hover img{
+  opacity: 1;
+  rotate: -10deg;
 }
