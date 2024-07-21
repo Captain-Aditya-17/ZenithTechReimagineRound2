@@ -24,7 +24,12 @@ const App = () => {
               ease: 'power4.inOut'
             })
             introTl.to('.intro',{
-             opacity: 0
+             opacity: 0,
+             onComplete:()=>{
+              introTl.to('.intro',{
+                display: 'none'
+              })
+             }
             })
         }
     )

@@ -9,7 +9,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
 import '../App.css'
 import video from '../assets/homeVideo.mp4'
-import Intro from './Intro.jsx'
 const Home = () => {
   const videoRef = useRef()
   useGSAP(
@@ -39,7 +38,6 @@ const Home = () => {
   return (
     <>
     <div className='w-full h-screen full'>
-    <Intro/>
     <div className='w-full relative h-full flex gap-3 flex-shrink-0 p-3 overflow-hidden'>
           <div className='h-full home hidden md:block relative w-full rounded-xl overflow-hidden bg-black'>
           <video ref={videoRef} className='absolute z-[9] w-full h-full object-cover opacity-50 scale-[1.2]' src={video}  muted loop></video>

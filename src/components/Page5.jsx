@@ -80,7 +80,7 @@ const Page5 = () => {
         <>
         <div className='hidden md:block relative md:w-full slide-con md:h-[400vh] md:bg-black md:text-white'>
             <div className="slides md:w-full md:h-screen md:flex md:sticky md:top-0">
-                <div className='md:w-full slide-1 relative overflow-hidden md:h-full md:flex-shrink-0'>
+                <div className='md:w-full slide-1 relative overflow-hidden  md:h-full md:flex-shrink-0'>
                     <h1 className='absolute z-10 bold text-[8vw] font-bold uppercase'>exclusive Design</h1>
                     <img className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[.8]' src={slide1} alt="" />
                     <img className='move-img absolute top-[-20%] right-0 scale-[.8]' src={slide1_2} alt="" />

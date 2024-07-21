@@ -15,6 +15,7 @@ import Shop from './components/Shop'
 import Page11 from './components/Page11'
 import Footer from './components/Footer'
 import Page2 from './components/Page2'
+import Intro from './components/Intro.jsx'
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -40,18 +41,17 @@ const App = () => {
 
   return (
     <>
+    <Intro/>
       <div
         onMouseMove={(dets) => cursorAnimation(dets)}
         className='bg-black'>
         <div className='hidden md:block scale-0  cursor w-[2vw] h-[2vw] mix-blend-difference rounded-full bg-white fixed z-[999]'></div>
-        <div onMouseEnter={none} onMouseLeave={reapt}>
-          <Navbar />
-        </div>
+        <Navbar />
         <Home />
-        <Page2/>
+        <Page2 />
         <Page4 />
         <div onMouseEnter={none} onMouseLeave={reapt}>
-        <Shop />
+          <Shop />
         </div>
         <Page3 />
         <Page5 />
@@ -60,9 +60,9 @@ const App = () => {
         <Page8 />
         <Page9 />
         <Page10 />
-        <Page11/>
+        <Page11 />
         <div onMouseEnter={none} onMouseLeave={reapt}>
-        <Footer/>
+          <Footer />
         </div>
       </div>
     </>
