@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div ref={menuFull} className='w-full h-screen menu-screen transition-all duration-[.5] bg-white flex fixed items-center z-[98] opacity-0 visibility-hidden justify-center gap-y-3 gap-[5vw] p-5'>
+      <div ref={menuFull} className='w-full h-screen menu-screen transition-all duration-[.5] bg-white flex fixed items-center z-[98] opacity-0 invisible justify-center gap-y-3 gap-[5vw] p-5'>
         <div className='w-full px-[2vw] flex justify-between'>
           <div className='text-black flex items-start justify-center flex-col gap-y-[2vw]'>
             <div className='text-black flex items-start justify-center flex-col '>

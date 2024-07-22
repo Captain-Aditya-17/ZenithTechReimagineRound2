@@ -119,11 +119,11 @@ const Shop = () => {
                 <div className='h-[35%] bottom-0 z-[9] w-[95%] rounded-tl-2xl rounded-tr-2xl bg-black absolute'></div>
                 <div className='flex items-center justify-around gap-5' >
                 <div className='w-[25vw] h-[20vw] overflow-hidden z-10 rounded-md '>
-                    <img ref={screenRef} className='w-full h-full object-cover' src={poster} alt="" />
+                    <img ref={screenRef} className='w-full h-full object-cover' src={items[0].img} alt="" />
                 </div>
                 <div className='w-[40%] relative z-10 flex flex-col gap-y-3'>
-                    <h1 ref={screenName} className='text-4xl uppercase text '>Car NAme</h1>
-                    <p ref={screenPara} className=' uppercase text-xl text text-left'>Porsche Beauties</p>
+                    <h1 ref={screenName} className='text-4xl uppercase text '>{items[0].name}</h1>
+                    <p ref={screenPara} className=' uppercase text-xl text text-left'>{items[0].para}</p>
                 </div>
                 </div>
                 <div className='z-10 w-full flex items-start px-[3vw]'>

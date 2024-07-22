@@ -11,37 +11,12 @@ import '../App.css'
 import video from '../assets/homeVideo.mp4'
 const Home = () => {
   const videoRef = useRef()
-  useGSAP(
-    ()=>{
-      gsap.to(videoRef.current,{
-        scrollTrigger:{
-          trigger: '.full',
-          start: '5% top',
-          end: 'bottom top',
-          scrub: 1,
-        },
-        onStart:()=>{
-          videoRef.current.play()
-        }
-      })
-      gsap.to('.full',{
-        scrollTrigger:{
-          trigger: '.full',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: 1,
-          pin: true
-        },
-      })
-    } 
-  )
   return (
     <>
     <div className='w-full h-screen full'>
     <div className='w-full relative h-full flex gap-3 flex-shrink-0 p-3 overflow-hidden'>
           <div className='h-full home hidden md:block relative w-full rounded-xl overflow-hidden bg-black'>
-          <video ref={videoRef} className='absolute z-[9] w-full h-full object-cover opacity-50 scale-[1.2]' src={video}  muted loop></video>
-          {/* <img className='w-full h-full object-cover' src={practise} alt="" /> */}
+          <video ref={videoRef} className='absolute z-[9] w-full h-full object-cover opacity-50 scale-[1.2]' src={video}  muted loop autoPlay></video>
           <div className='absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl text text-white flex flex-col items-center'
           ><h1>Porsche</h1>
             <p className='text-xl text-center'>Keep your essence. · Models · The mid-engine sports car for two made for pure driving pleasure. · The iconic, rear-engine sports car with exceptional ...</p>
