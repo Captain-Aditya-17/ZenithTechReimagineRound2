@@ -8,6 +8,8 @@ import elem1 from '../assets/elem1.jpg'
 import elem2 from '../assets/elem2.jpg'
 import elem3 from '../assets/elem3.jpg'
 import elem4 from '../assets/elem4.jpg'
+import steering9 from '../assets/steering.png';
+
 
 
 const Page9 = () => {
@@ -60,8 +62,9 @@ const Page9 = () => {
                     })
                 }
             </div>
-            <div className='hidden md:flex w-[40%] login h-screen absolute top-[90%] left-1/2 -translate-x-1/2  items-center justify-center  bg-white text-black'>
-           <div className='flex items-center gap-5 justify-center flex-col'> 
+            <div className='hidden md:flex w-[40%] login h-screen overflow-hidden absolute top-[90%] left-1/2 -translate-x-1/2  items-center justify-center  bg-white text-black'>
+            <img className='absolute z-[9] opacity-[.3] left-[50%] top-1/2 -translate-x-1/2 -translate-y-1/2 w-[40%]' src={steering9} alt="" />
+           <div className='relative z-10 flex items-center gap-5 justify-center flex-col'> 
             <h1 className='quantify text-3xl md:text-4xl'>Connect to Porsche's Newsletter</h1>
            <button className='md:text-xl text px-[10vw] border-2 border-black py-[2vw] bg-black md:px-[3vw] rounded-full transition-all duration-[.5] md:py-2 text-white hover:bg-white   hover:text-black'>Sign Up</button>
            </div>

@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <>
       <div ref={menuFull} className='w-full h-screen menu-screen transition-all duration-[.5] bg-white flex fixed items-center z-[98] opacity-0 invisible justify-center gap-y-3 gap-[5vw] p-5'>
-        <div className='w-full px-[2vw] flex justify-between'>
+        <div className='w-full px-[2vw] hidden md:flex justify-between'>
           <div className='text-black flex items-start justify-center flex-col gap-y-[2vw]'>
             <div className='text-black flex items-start justify-center flex-col '>
               <h1 className='good-times text-2xl'>Sales</h1>
@@ -96,7 +96,7 @@ const Navbar = () => {
       </div>
       <div className='fixed z-[99] top-0 left-1/2 -translate-x-1/2 text-white  flex items-center justify-between w-[90%] md:w-full h-[12vh] '>
         <img className='w-[15%] md:w-[7%]' src={logo} alt='' />
-        <div onClick={toggle} className='mr-5 text-xl flex bg-zinc-900 md:bg-transparent rounded-full px-4 py-2 md:p-2 flex-col items-end gap-2 cursor-pointer '>
+        <div onClick={toggle} className='mr-5 text-xl flex md:bg-transparent rounded-full px-4 py-2 md:p-2 flex-col items-end gap-2 cursor-pointer '>
           <h1 ref={h1Ref} className='transition-all text-2xl'>Menu</h1>
         </div>
       </div>
