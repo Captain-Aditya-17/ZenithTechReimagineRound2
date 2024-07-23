@@ -39,7 +39,7 @@ const Shop = () => {
         seats: '2',
         para: 'THE LEGENDARY 911. THE IDENTITY OF THE PORSCHE BRAND - SINCE 1963. HERE YOU WILL FIND AN OVERVIEW OF ALL PORSCHE 911 MODEL VARIANTS.',
         id: 1,
-        price: 'INR 14,772,000',
+        price: 'INR 19,899,000',
         speed: '330'
 
 
@@ -52,7 +52,7 @@ const Shop = () => {
         seats: '2',
         para: 'A vast range of emotions. The all-electric Taycan with Performance Battery, sharpened driving dynamics and a pure proportions. Pure Porsche E-Performance.',
         id: 2,
-        price: 'INR 14,772,000',
+        price: 'INR 18,942,000',
         speed: '230'
 
 
@@ -65,7 +65,7 @@ const Shop = () => {
         seats: '4 - 5',
         para: 'The Porsche Panamera. A Sports Car without compromise for everyday use. Drive a Sports Car for 4 including luggage. An overview of all models and equipment ...',
         id: 3,
-        price: 'INR 14,772,000',
+        price: 'INR 16,962,000',
         speed: '168'
 
     },
@@ -77,7 +77,7 @@ const Shop = () => {
         seats: '4 - 5',
         para: 'Five doors, five seats, yet incomparable, unmistakable and unstoppable. In its latest generation, the Macan is and remains the sports car of compact SUVs.',
         id: 4,
-        price: 'INR 14,772,000',
+        price: 'INR 9,605,000',
         speed: '144'
 
     },
@@ -89,7 +89,7 @@ const Shop = () => {
         seats: '4 - 5',
         para: 'The Cayenne models. Drive a Sports Cars for the whole family. Including luggage. An overview of all model variants and equipment details.',
         id: 5,
-        price: 'INR 14,772,000',
+        price: 'INR 14,248,000',
         speed: '164'
 
     },
@@ -158,7 +158,7 @@ const Shop = () => {
                     </div>
                     <div className='flex flex-col items-center'>
                     <h1 className='good-times text-xl text-zinc-600'>speed</h1>
-                    <h1 ref={screenspeed} className='good-times text-2xl'>{items[0].speed}</h1>
+                    <h1 ref={screenspeed} className='good-times text-2xl'>{items[0].speed} km/hr</h1>
                     </div>
                 </div>
                 <div className='flex items-center justify-around gap-5' >
